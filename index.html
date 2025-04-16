@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Shimaa Ibrahim</title>
+    <style>
+        :root {
+            --accent-color: #004d7a;
+            --bg-color: #f9fafb;
+            --text-color: #222;
+            --font-main: 'Georgia', serif;
+        }
+
+        body {
+            font-family: var(--font-main),serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .profile-photo {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+
+        .contact-info {
+            flex-grow: 1;
+        }
+
+        .contact-info h1 {
+            font-size: 2rem;
+            color: var(--accent-color);
+            margin: 0;
+        }
+
+        .contact-info h2 {
+            font-size: 1.1rem;
+            font-weight: normal;
+            margin-top: 0.3rem;
+            color: #555;
+        }
+
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 1rem;
+        }
+
+        .contact-info ul li {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0 1rem;
+            border-bottom: 2px solid #eee;
+        }
+
+        .tab-button {
+            padding: 0.6rem 1.2rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border: none;
+            background: none;
+            color: var(--accent-color);
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .tab-button.active {
+            border-bottom: 2px solid var(--accent-color);
+            font-weight: bold;
+        }
+
+        .tab-content {
+            display: none;
+            margin-top: 1.5rem;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        ul.publications li {
+            margin-bottom: 1rem;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #aaa;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 700px) {
+            .header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .contact-info ul {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+
+        <img src="src/ShimaaIbrahim.jpg" alt="Your Photo" class="profile-photo">
+        <div class="contact-info">
+            <h1>Shimaa Ibrahim</h1>
+            <h2>Knowledge Engineer</h2>
+            <ul>
+                <li>Email: <a href="mailto:shmkhaled@alexu.edu.eg">shmkhaled@alexu.edu.eg</a></li>
+                <li><a href="https://www.linkedin.com/in/shimaa-ibrahim-57a23b21/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://scholar.google.com/citations?user=z09e1esAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="intro">
+        <p>
+            I am a knowledge engineer with a Ph.D. in Computer Science from Bonn University, Germany,
+            with over 6 years of experience in ontology engineering, semantic web, and NLP technologies.
+            My research focuses on developing open-source frameworks for ontology matching and enrichment
+            that follow FAIR principles.
+        </p>
+    </div>
+
+    <div class="tabs">
+        <button class="tab-button active" onclick="openTab(event, 'publications')">Publications</button>
+        <button class="tab-button" onclick="openTab(event, 'experience')">Experience</button>
+        <button class="tab-button" onclick="openTab(event, 'organization')">Organization</button>
+    </div>
+
+    <div id="publications" class="tab-content active">
+        <h3>Journal Articles</h3>
+        <ul class="publications">
+            <li>
+                <strong>Shimaa Ibrahim</strong>, Said Fathalla, Jens Lehmann, and Hajira Jabeen.
+                <strong><a href="https://ieeexplore.ieee.org/document/10024281" target="_blank">Toward the multilingual semantic web: Multilingual ontology matching and assessment</a></strong><br>
+                <em>IEEE Access</em>, Volume 11, pp. 8581–8599, IEEE, 2023.
+                <br><em>Impact Factor: 3.4</em>
+            </li>
+            <li>
+                Mohamed Ali, Said Fathalla, <strong>Shimaa Ibrahim</strong>, Mohamed Kholief, and Yasser F Hassan.
+                <strong><a href="https://www.tandfonline.com/doi/abs/10.1080/17517575.2019.1592232" target="_blank">CLOE: A cross-lingual ontology enrichment using multi-agent architecture</a></strong><br>
+                <em>Enterprise Information Systems</em>, pp. 1–21, Taylor & Francis, 2019.
+                <br><em>Impact Factor: 4.4</em>
+            </li>
+        </ul>
+
+        <h3>In Conference Proceedings</h3>
+        <ul class="publications">
+            <li>
+                <strong>Shimaa Ibrahim</strong>, Said Fathalla, Jens Lehmann, and Hajira Jabeen.
+                <strong><a href="https://ieeexplore.ieee.org/abstract/document/9457747" target="_blank">Multilingual ontology merging using cross-lingual matching</a></strong><br>
+                In <em>IEEE/WIC/ACM International Joint Conference on Web Intelligence and Intelligent Agent Technology (WI-IAT)</em>, pp. 113–120, IEEE, 2020.
+            </li>
+            <li>
+                <strong>Shimaa Ibrahim</strong>, Said Fathalla, Hamed Shariat Yazdi, Jens Lehmann, and Hajira Jabeen.
+                <strong><a href="https://link.springer.com/chapter/10.1007/978-3-030-32327-1_20" target="_blank">OECM: A cross-lingual approach for ontology enrichment</a></strong><br>
+                In <em>The Semantic Web: ESWC 2019 Satellite Events</em>, Portorož, Slovenia, June 2–6, 2019. Revised Selected Papers 16, pp. 100–104, Springer, 2019.
+            </li>
+            <li>
+                <strong>Shimaa Ibrahim</strong>, Said Fathalla, Hamed Shariat Yazdi, Jens Lehmann, and Hajira Jabeen.
+                <strong><a href="https://link.springer.com/chapter/10.1007/978-3-030-33220-4_16" target="_blank">From monolingual to multilingual ontologies: The role of cross-lingual ontology enrichment.</a></strong><br>
+                In <em>Semantic Systems. The Power of AI and Knowledge Graphs: 15th Int'l Conference, SEMANTiCS 2019</em>, Karlsruhe, Germany, September 9–12, 2019. Proceedings 15, pp. 215–230, Springer, 2019.
+            </li>
+            <li>
+                Mohamed Ali, Said Fathalla, <strong>Shimaa Ibrahim</strong>, Mohamed Kholief, and Yasser Hassan.
+                <strong><a href="https://www.sciencedirect.com/science/article/pii/S187705091831617X" target="_blank">Cross-lingual ontology enrichment based on multi-agent architecture.</a></strong><br>
+                <em>Procedia Computer Science</em>, Volume 137, pp. 127–138, Elsevier, 2018.
+            </li>
+        </ul>
+    </div>
+
+
+    <div id="experience" class="tab-content">
+        <h3>Experience</h3>
+        <ul class="experience">
+            <li>
+                <strong>Research Associate and Software Developer</strong><br>
+                Computer Science Institute III, University of Bonn, Bonn, Germany.<br>
+                <span class="date">04/2017 – 06/2024</span>
+            </li>
+            <li>
+                <strong>Research and Teaching Assistant</strong><br>
+                Department of Information Technology, Institute of Graduate Studies and Research, University of Alexandria, Alexandria, Egypt.<br>
+                <span class="date">09/2007 – 07/2016</span>
+            </li>
+        </ul>
+    </div>
+
+
+    <div id="organization" class="tab-content">
+        <h3>Organization</h3>
+
+        <h4>Program Committee Member:</h4>
+        <ul class="organization-list">
+            <li>International Conference on Semantic Systems (SEMANTiCS) – <span class="year">2019 – 2024</span></li>
+            <li>Conference on Information and Knowledge Management (CIKM) – <span class="year">2020</span></li>
+            <li>Computer Science Conference for UniBonn Students (CSCUBS) – <span class="year">2019</span></li>
+        </ul>
+
+        <h4>Journal Reviewer:</h4>
+        <ul class="organization-list">
+            <li>Semantic Web Journal – <span class="year">2022</span></li>
+        </ul>
+
+        <h4>Invited Talks:</h4>
+        <ul class="organization-list">
+            <li>IEEE/WIC/ACM International Joint Conference On Web Intelligence And Intelligent Agent Technology (WI-IAT '20), Melbourne, Australia – <span class="year">2020</span></li>
+            <li>The 16th Extended Semantic Web Conference (ESWC), Slovenia – <span class="year">2019</span></li>
+            <li>SEMANTiCS conference, Germany – <span class="year">2019</span></li>
+            <li>SEMANTiCS conference, Austria – <span class="year">2018</span></li>
+        </ul>
+    </div>
+
+
+    <div class="footer">
+        © 2025 Shimaa Ibrahim · Last updated: April 2025
+    </div>
+
+</div>
+
+<script>
+    function openTab(evt, tabId) {
+        const tabs = document.querySelectorAll('.tab-content');
+        const buttons = document.querySelectorAll('.tab-button');
+
+        tabs.forEach(tab => tab.classList.remove('active'));
+        buttons.forEach(btn => btn.classList.remove('active'));
+
+        document.getElementById(tabId).classList.add('active');
+        evt.currentTarget.classList.add('active');
+    }
+</script>
+
+</body>
+</html>
