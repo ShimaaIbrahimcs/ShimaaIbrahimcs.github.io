@@ -124,6 +124,12 @@
             margin-right: 8px;
             color: #333;
         }
+        .intro p {
+            text-align: justify;
+        }
+        ul.projects li {
+            text-align: justify;
+        }
 
         ul.publications li {
             margin-bottom: 1rem;
@@ -161,7 +167,7 @@
         <img src="src/ShimaaIbrahim.jpg" alt="Your Photo" class="profile-photo">
         <div class="contact-info">
             <h1>Shimaa Ibrahim</h1>
-            <h2>Knowledge Engineer</h2>
+            <h2>Research Associate and Software Engineer</h2>
             <ul>
                 <li>
                     <i class="fas fa-envelope"></i>
@@ -182,16 +188,23 @@
 
     <div class="intro">
         <p>
-            I am a knowledge engineer with a Ph.D. in Computer Science from Bonn University, Germany,
-            with over 6 years of experience in ontology engineering, semantic web, and NLP technologies.
-            My research focuses on developing open-source frameworks for ontology matching and enrichment
-            that follow FAIR principles.
+            I am a Research Associate and Software Engineer specializing in ontologies,
+            with a Ph.D. in Computer Science from the University of Bonn and over six years of experience
+            in ontology engineering, semantic web technologies, and research data management.
+            My work focuses on developing open-source frameworks for ontology matching, enrichment,
+            and quality assessment across multilingual and metadata-rich domains.
+            I have strong technical expertise in semantic modeling using RDF, OWL, and SPARQL,
+            as well as practical experience in implementing ontology-based solutions with Scala, Java, and Python.
+            My research contributes to FAIR data practices and supports semantic interoperability in domains such as
+            scholarly communication, biomedical data, and fiscal information—with solutions that can applied effectively
+            to any domain.
         </p>
     </div>
 
     <div class="tabs">
         <button class="tab-button active" onclick="openTab(event, 'publications')">Publications</button>
         <button class="tab-button" onclick="openTab(event, 'experience')">Experience</button>
+        <button class="tab-button" onclick="openTab(event, 'projects')">Projects</button>
         <button class="tab-button" onclick="openTab(event, 'organization')">Organization</button>
     </div>
 
@@ -242,14 +255,9 @@
         <h3>Experience</h3>
         <ul class="experience">
             <li>
-                <strong>Assistant Professor</strong><br>
-                Department of Information Technology, Institute of Graduate Studies and Research, University of Alexandria, Alexandria, Egypt.<br>
-                <span class="date">03/2025 – Now</span>
-            </li>
-            <li>
-                <strong>Research Associate and Software Developer</strong><br>
+                <strong>Research Associate and Software Engineer</strong><br>
                 Computer Science Institute III, University of Bonn, Bonn, Germany.<br>
-                <span class="date">04/2018 – 12/2024</span>
+                <span class="date">04/2018 – 01/2025</span>
             </li>
             <li>
                 <strong>Research and Teaching Assistant</strong><br>
@@ -259,6 +267,35 @@
         </ul>
     </div>
 
+    <div id="projects" class="tab-content">
+        <h3>Projects</h3>
+        <ul class="projects">
+            <li>
+                <a href="https://smartdataanalytics.github.io/MoMatch/" target="_blank"><strong>MoMatch</strong></a> –
+                A multilingual ontology matching framework that identifies and generates high-quality alignments between ontologies in different natural languages, supporting semantic interoperability in cross-lingual settings.
+            </li>
+            <li>
+                <a href="https://github.com/SmartDataAnalytics/QASO" target="_blank"><strong>QASO</strong></a> –
+                A comprehensive metric-based suite for assessing the quality of multilingual ontology enrichment, covering ontology structure, matching accuracy, and enrichment effectiveness.
+            </li>
+            <li>
+                <a href="https://project-lambda.org/" target="_blank"><strong>LAMBDA</strong></a> –
+                EU Horizon 2020 (GA no. 809965): An international project focused on knowledge exchange and collaboration between institutions in Serbia, Germany, and the UK. Contributed to strengthening R&D capabilities at the Mihajlo Pupin Institute through semantic technologies, training, and dissemination activities.
+            </li>
+            <li>
+                <a href="https://smartdataanalytics.github.io/MULON/" target="_blank"><strong>MULON</strong></a> –
+                A multilingual ontology merging tool that integrates heterogeneous ontologies in different languages into a unified multilingual ontology, facilitating cross-lingual reasoning and knowledge sharing.
+            </li>
+            <li>
+                <a href="https://github.com/shmkhaled/OECM" target="_blank"><strong>OECM</strong></a> –
+                An ontology enrichment tool that automates the integration of concepts and relations from source ontologies in different languages to enhance the coverage and expressiveness of a target ontology.
+            </li>
+            <li>
+                <a href="https://github.com/shmkhaled/CLOE" target="_blank"><strong>CLOE</strong></a> –
+                A cross-lingual ontology enrichment framework based on a multi-agent architecture. It enables the enrichment of ontologies using multilingual textual resources, improving multilingual knowledge access and semantic interoperability.
+            </li>
+        </ul>
+    </div>
 
     <div id="organization" class="tab-content">
         <h3>Organization</h3>
@@ -286,7 +323,7 @@
 
 
     <div class="footer">
-        © 2025 Shimaa Ibrahim · Last updated: April 2025
+        © 2025 Shimaa Ibrahim · Last updated: July 2025
     </div>
 
 </div>
